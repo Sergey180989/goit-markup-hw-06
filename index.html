@@ -14,6 +14,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+
     <title>WebStudio</title>
 </head>
 
@@ -42,21 +43,54 @@
                     </li>
                 </ul>
             </address>
+            <button class="header-burger js-open-menu" type="button">
+                <svg class="" width="32" height="22">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-container js-menu-container">
+            <button class="mobile-close-btn js-close-menu" type="button">
+                <svg class="" width="8" height="8">
+                    <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+
+                <ul class="list mobile-menu">
+                    <li><a class="mobile-link link current" href="./index.html">Studio</a></li>
+                    <li>
+                        <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a class="mobile-link link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="mobile-address">
+                <ul class="list mobile-address-list">
+                    <li>
+                        <a class="mobile-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li>
+                        <a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </header>
-    <main>
-        <!--section1-->
+    <!-- <main> -->
+    <!--section1-->
 
-        <section class="main">
+    <!-- <section class="main">
             <div class="container">
                 <h1 class="main-headline">
                     Effective Solutions for Your Business
                 </h1>
                 <button type="button" class="main-button" data-modal-open="">Order Service</button>
             </div>
-        </section>
-        <!--section2-->
-        <section class="container-main">
+        </section> -->
+    <!--section2-->
+    <!-- <section class="container-main">
             <div class="container">
                 <h2 class="visually-hidden">Advantages</h2>
                 <ul class="list">
@@ -114,9 +148,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!--section3-->
-        <section class="section-doing">
+        </section> -->
+    <!--section3-->
+    <!-- <section class="section-doing">
             <div class="container">
                 <h2 class="section_name">What are we doing</h2>
                 <ul class="list">
@@ -131,9 +165,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!--section4-->
-        <section class="our_team">
+        </section> -->
+    <!--section4-->
+    <!-- <section class="our_team">
             <div class="container">
                 <h2 class="section_name">Our Team</h2>
 
@@ -293,9 +327,9 @@
 
 
             </div>
-        </section>
-        <!--section5-->
-        <section class="section_customer">
+        </section> -->
+    <!--section5-->
+    <!-- <section class="section_customer">
             <div class="container">
                 <h2 class="section_name">Customers</h2>
                 <ul class="list">
@@ -346,9 +380,9 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
     <!--footer-->
-    <footer class="footer-section list_footer">
+    <!-- <footer class="footer-section list_footer">
         <div class="footer-container container">
             <div class="footer_div">
                 <a class="logo link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
@@ -404,8 +438,8 @@
                 </form>
             </div>
         </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
                 <svg class="modal_christ" width="8" height="8">
@@ -462,9 +496,14 @@
                 <button type="submit" class="modal-buttom" data-modal-open="">Send</button>
             </form>
         </div>
-    </div>
-
+    </div> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
