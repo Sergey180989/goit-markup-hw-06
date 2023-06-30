@@ -581,11 +581,6 @@ body {
   background-color: var(--dark);
   padding-top: 97.5px;
   padding-bottom: 96px;
-  padding-left: 80px;
-  padding-right: 80px;
-  display: flexbox;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* .footer-section {
@@ -594,7 +589,7 @@ body {
   padding-bottom: 100px;
 } */
 
-list_footer {
+.list_footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -604,7 +599,10 @@ list_footer {
   display: flexbox;
 } */
 
-footer_div {
+.footer_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* .footer_div {
