@@ -95,6 +95,8 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -243,7 +245,6 @@ body {
 @media screen and (min-width: 768px) {
   .header-address-link {
     display: flex;
-
     flex-direction: column;
     flex-shrink: 0;
     color: var(--slate, #434455);
@@ -377,17 +378,25 @@ body {
   align-items: flex-start;
   gap: 40px;
   padding-bottom: 48px;
+  width: 100%;
 }
 
 .mobile-tel {
   color: var(--iris, #4d5ae5);
   font-size: 36px;
+  font-size: 24px;
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
-  line-height: 40px;
-  letter-spacing: 0.72px;
+  line-height: calc(40 / 36);
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  font-style: normal;
+}
+
+@media screen and (min-width: 420px) {
+  .mobile-tel {
+    font-size: 36px;
+  }
 }
 
 .mobile-mail {
@@ -403,8 +412,14 @@ body {
 .mobile-list-soc {
   display: flex;
   justify-content: center;
-  gap: 56px;
+  gap: 23px;
   list-style-type: none;
+}
+
+@media screen and (min-width: 420px) {
+  .mobile-list-soc {
+    gap: 56px;
+  }
 }
 
 .mobile-li-soc {
@@ -498,7 +513,7 @@ body {
           var(--hero-background),
           var(--hero-background)
         ),
-        url(../images/mobil/heromobile2x.jpg);
+        url(../images/mobil/herodesk2x.jpg);
     }
   }
 }
@@ -711,7 +726,7 @@ body {
     align-self: stretch;
     color: var(--navyblue);
     text-align: left;
-    font-size: 36px;
+    font-size: 20px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -765,6 +780,10 @@ body {
   }
 }
 
+.list-doing {
+  gap: 24px;
+}
+
 @media screen and (min-width: 1158px) {
   .list-img {
     width: calc((100% - 48px) / 3);
@@ -787,6 +806,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 296px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -794,6 +815,8 @@ body {
     margin-left: 0;
     margin-right: 0;
     max-width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -1181,6 +1204,7 @@ body {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -1209,7 +1233,7 @@ body {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .icon_list_text {
     font-family: "Roboto";
     font-style: normal;
@@ -1230,6 +1254,12 @@ body {
   gap: 16px;
   justify-content: center;
   margin-bottom: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon_lists {
+    margin-bottom: 0;
+  }
 }
 
 .icon_li_footer {
